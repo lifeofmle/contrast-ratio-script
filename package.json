@@ -1,0 +1,29 @@
+{
+  "name": "contrast-ratio-script",
+  "version": "1.0.0",
+  "description": "A Google script used to calculate contrast ratio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifeofmle/colour-contrast-script.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lifeofmle/colour-contrast-script/issues"
+  },
+  "homepage": "https://github.com/lifeofmle/colour-contrast-script",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-spec-reporter": "0.0.22",
+    "phantomjs": "^1.9.18",
+    "require-dir": "^0.3.0"
+  }
+}
