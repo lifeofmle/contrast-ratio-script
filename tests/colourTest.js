@@ -106,4 +106,34 @@ describe("Colour ratio", function() {
 			expect(ratio).toBe(8.6);
 		});
 	});		
+
+	describe("WCAG check", function() {			
+		it ("Fail scenario", function() {
+			var ratio = 1;
+			var result = wcagCheck(ratio);
+			
+			expect(result).toBe("Fail");
+		});
+
+		it ("AA-large scenario", function() {
+			var ratio = 3;
+			var result = wcagCheck(ratio);
+			
+			expect(result).toBe("AA-large");
+		});
+
+		it ("AA scenario", function() {
+			var ratio = 4.5;
+			var result = wcagCheck(ratio);
+			
+			expect(result).toBe("AA");
+		});
+
+		it ("AAA scenario", function() {
+			var ratio = 7;
+			var result = wcagCheck(ratio);
+			
+			expect(result).toBe("AAA");
+		});
+	});
 });

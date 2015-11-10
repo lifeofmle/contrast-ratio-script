@@ -55,3 +55,15 @@ function contrastRatio (foreground, background) {
 
 	return ratio;
 }
+
+function wcagCheck(ratio) {
+	if (ratio >= 7){
+		return "AAA";
+	} else if (ratio >= 4.5 && ratio < 7){
+		return "AA";
+	} else if (ratio >= 3 && ratio < 4.5){
+		return "AA-large";
+	} else {
+		return "Fail";
+	}
+}
